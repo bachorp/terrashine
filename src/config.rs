@@ -10,7 +10,7 @@ use std::{
 use url::Url;
 
 lazy_static! {
-    static ref DEFAULT_SOCKET: SocketAddr = SocketAddr::new(IpAddr::V6(Ipv6Addr::LOCALHOST), 9543);
+    static ref DEFAULT_SOCKET: SocketAddr = SocketAddr::new(IpAddr::V6(Ipv6Addr::UNSPECIFIED), 9543);
 }
 
 fn validate_redirect_url(s: &str) -> Result<Url, anyhow::Error> {
